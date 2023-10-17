@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ülesanded</title>
+</head>
+
+<body>
+    <h2>Ülesanne 1</h2>
+    <script>
+        document.write("<p>");
+        for (let i = 1; i <= 100; i++) {
+            document.write(i + ". ");
+            if (i % 10 === 0) {
+                document.write("<br>");
+            }
+        }
+        document.write("</p>");
+
+        document.write("<p>");
+        for (let i = 1; i <= 100; i++) {
+            document.write(i + ". ");
+            if (i % 10 === 0) {
+                document.write("<br>");
+            }
+        }
+        document.write("</p>");
+    </script>
+
+    <h2>Rida</h2>
+    <script>
+        let starsRow = "";
+        for (let i = 0; i < 10; i++) {
+            starsRow += "* ";
+        }
+        document.write(starsRow);
+    </script>
+
+    <h2>Rida II</h2>
+    <script>
+        for (let i = 0; i < 10; i++) {
+            document.write("*<br>");
+        }
+    </script>
+
+    <h2>Ruut</h2>
+    <form onsubmit="drawSquare(); return false;">
+        <label for="size">Ruudu suurus: </label>
+        <input type="number" id="size" name="size" required><br><br>
+        <button type="submit">Kuva ruut</button>
+    </form>
+
+    <div id="square"></div>
+
+    <h2>Kahanev</h2>
+    <script>
+        for (let i = 10; i >= 0; i -= 2) {
+            document.write(i + " ");
+        }
+    </script>
+
+    <h2>Kolmega jagunevad</h2>
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 === 0) {
+                document.write(i + ", ");
+            }
+        }
+    </script>
+
+    <h2>Massiivid ja tsüklid</h2>
+    <script>
+        let poisid = ["John", "Michael", "William", "James", "Robert"];
+        let tüdrukud = ["Mary", "Linda", "Barbara", "Elizabeth", "Jennifer"];
+
+        for (let i = 0; i < poisid.length; i++) {
+            document.write(poisid[i] + " - " + tüdrukud[i] + "<br>");
+        }
+
+        let poisidCopy = poisid.slice();
+        let tüdrukudCopy = tüdrukud.slice();
+
+        document.write("<p>Poiste koopia: " + poisidCopy + "</p>");
+        document.write("<p>Tüdrukute koopia: " + tüdrukudCopy + "</p>");
+    </script>
+
+    <script>
+        function drawSquare() {
+            let size = document.getElementById('size').value;
+            let squareElement = document.getElementById('square');
+            squareElement.innerHTML = "";
+            for (let i = 0; i < size; i++) {
+                for (let j = 0; j < size; j++) {
+                    squareElement.innerHTML += "* ";
+                }
+                squareElement.innerHTML += "<br>";
+            }
+        }
+    </script>
+</body>
+
+</html>
