@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geomeetria kalkulaator</title>
+</head>
+
+<body>
+    <h2>Trapetsi pindala ja rombi ümbermõõt</h2>
+
+    <form id="geometryForm" onsubmit="calculateResults(); return false;">
+        <label for="base1">Esimene alus: </label>
+        <input type="number" step="0.1" id="base1" name="base1" required><br><br>
+
+        <label for="base2">Teine alus: </label>
+        <input type="number" step="0.1" id="base2" name="base2" required><br><br>
+
+        <label for="height">Kõrgus: </label>
+        <input type="number" step="0.1" id="height" name="height" required><br><br>
+
+        <label for="side">Rombi külg: </label>
+        <input type="number" step="0.1" id="side" name="side" required><br><br>
+
+        <button type="submit">Arvuta</button>
+    </form>
+
+    <p id="results"></p>
+
+    <script>
+        function calculateResults() {
+            const base1 = parseFloat(document.getElementById('base1').value);
+            const base2 = parseFloat(document.getElementById('base2').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const side = parseFloat(document.getElementById('side').value);
+
+            const trapezoidArea = ((base1 + base2) * height) / 2;
+            const rhombusPerimeter = 4 * side;
+
+            const resultsElement = document.getElementById('results');
+            resultsElement.innerHTML = `Trapetsi pindala on: ${trapezoidArea.toFixed(1)} ühikut<sup>2</sup><br>
+                                        Rombi ümbermõõt on: ${rhombusPerimeter.toFixed(1)} ühikut`;
+        }
+    </script>
+</body>
+
+</html>
