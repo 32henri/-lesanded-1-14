@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* // ülesanne 14, Henri Evert, 17.10.2023*/
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .thumbnail {
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 30%;
+            cursor: pointer;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <div class="thumbnail" onclick="displayImage('link_to_image1')">
+        <img src="link_to_image1" alt="Image 1">
+    </div>
+    <div class="thumbnail" onclick="displayImage('link_to_image2')">
+        <img src="link_to_image2" alt="Image 2">
+    </div>
+    <div class="thumbnail" onclick="displayImage('link_to_image3')">
+        <img src="link_to_image3" alt="Image 3">
+    </div>
+    <!-- Add more thumbnail divs as needed -->
+</div>
+
+<script>
+    function displayImage(imagePath) {
+        // Create a modal or use any other method to display the enlarged image
+        // Here is an example of creating a simple alert
+        alert("You clicked on: " + imagePath);
+        // You can replace this alert with your custom code to display the image
+    }
+</script>
+
+</body>
+</html>
