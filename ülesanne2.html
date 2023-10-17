@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matemaatilised arvutused</title>
+</head>
+<body>
+    <h2>Arvutused kahe täisarvulise muutujaga</h2>
+    <script>
+        let a = 25;
+        let b = 7;
+
+        document.write(`Liitmine: ${a} + ${b} = ${a + b}<br>`);
+        document.write(`Lahutamine: ${a} - ${b} = ${a - b}<br>`);
+        document.write(`Korrutamine: ${a} * ${b} = ${a * b}<br>`);
+        document.write(`Jagamine: ${a} / ${b} = ${a / b}<br>`);
+        document.write(`Jääk: ${a} % ${b} = ${a % b}<br>`);
+    </script>
+
+    <h2>Teisendamine millimeetritest meetriteks ja sentimeetriteks</h2>
+    <script>
+        let millimeters = 3520;
+        let centimeters = millimeters / 10;
+        let meters = millimeters / 1000;
+
+        document.write(`Millimeetrid: ${millimeters} mm<br>`);
+        document.write(`Sentimeetrid: ${centimeters.toFixed(2)} cm<br>`);
+        document.write(`Meetrid: ${meters.toFixed(2)} m<br>`);
+    </script>
+
+    <h2>Täisnurkse kolmnurga ümbermõõt ja pindala</h2>
+    <script>
+        let aSide = 5;
+        let bSide = 7;
+        let cSide = Math.sqrt(aSide**2 + bSide**2);
+        let perimeter = aSide + bSide + cSide;
+        let area = (aSide * bSide) / 2;
+
+        document.write(`Kolmnurga küljed: a = ${aSide}, b = ${bSide}, c = ${cSide.toFixed(0)}<br>`);
+        document.write(`Ümbermõõt: ${perimeter.toFixed(0)} ühikut<br>`);
+        document.write(`Pindala: ${area.toFixed(0)} ruutühikut`);
+    </script>
+</body>
+</html>
