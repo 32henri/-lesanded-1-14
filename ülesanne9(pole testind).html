@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tervitusvorm</title>
+</head>
+<body>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nimi = $_POST["nimi"];
+    $email = $_POST["email"];
+
+    echo "Tere, ";
+
+    $nimi = ucfirst(strtolower($nimi));
+
+    for ($i = 0; $i < strlen($nimi); $i++) {
+        echo $nimi[$i] . ".";
+    }
+
+    echo "<br>";
+
+    $email = strtolower($email); 
+    $email = str_replace(" ", ".", $email); 
+    $email = str_replace("õ", "o", $email); 
+    $email = str_replace("ä", "a", $email); 
+    $email = str_replace("ö", "o", $email); 
+    $email = str_replace("ü", "u", $email); 
+    $email = str_replace("õ", "o", $email); 
+
+    $email .= "@tthk.ee";
+
+    echo "Sinu e-posti aadress on: $email";
+}
+?>
+<form method="post" action="">
+    Sisesta oma nimi: <input type="text" name="nimi" required><br>
+    Sisesta oma email: <input type="text" name="email" required><br>
+    <input type="submit" value="Saada">
+</form>
+</body>
+</html>
