@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Ülesanne 6</h1>
+    <h2>Ülesanne 6</h2>
     <?php
     for ($i = 1; $i <= 100; $i++) {
         echo $i;
