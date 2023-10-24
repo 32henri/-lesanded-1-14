@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Ülesanne 8</h1>
+    <h2>Ülesanne 8</h2>
     <?php
 
     $kuupaev_kellaaeg = date("d.m.Y H:i");
