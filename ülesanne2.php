@@ -4,6 +4,7 @@
     <title>Ülesanne 2</title>
 </head>
 <body>
+    <h1>Ülesanne 2</h1>
     <?php
     $arv1 = 10;
     $arv2 = 3;
