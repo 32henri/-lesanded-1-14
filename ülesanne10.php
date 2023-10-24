@@ -29,6 +29,10 @@
             margin-top: 20px;
         }
     </style>
+</head>
+<body>
+    <h2>Ülesanne 10</h2>
+    
     <?php
     function onLubatudLeht($leht) {
         $lubatudLehed = ['leht1', 'leht2', 'leht3', 'leht4'];
@@ -49,9 +53,6 @@
         }
     }
     ?>
-</head>
-<body>
-    <h2>Ülesanne 10</h2>
     <ul>
         <li><a href="#leht1">Leht 1</a></li>
         <li><a href="#leht2">Leht 2</a></li>
