@@ -5,6 +5,7 @@
     <title>Ülesanne 3</title>
 </head>
 <body>
+    <h1>Ülesanne 3</h1>
     <?php
     
     echo '<form method="post" action="">
