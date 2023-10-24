@@ -7,7 +7,7 @@
     <title>Ülesanne 3</title>
 </head>
 <body>
-    <h1>Ülesanne 3</h1>
+    <h2>Ülesanne 3</h2>
     <?php
     
     echo '<form method="post" action="">
