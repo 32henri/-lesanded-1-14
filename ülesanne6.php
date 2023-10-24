@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    
+    <h1>Ülesanne 6</h1>
     <?php
     for ($i = 1; $i <= 100; $i++) {
         echo $i;
