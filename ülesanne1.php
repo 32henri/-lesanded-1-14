@@ -6,7 +6,7 @@
     <title>Ülesanne 1</title>
 </head>
 <body>
-    <h1>Ülesanne 1</h1>
+    <h2>Ülesanne 1</h2>
     <?php
     
     function personalinfo($name,$dob,$starsign)
